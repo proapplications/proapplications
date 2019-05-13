@@ -1,3 +1,14 @@
 <script>
-    window.location.replace("http://trafalco.ru/click/5caf14726bcc6360d928a0a3/16/5/subaccount");
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://cors.io/?http://195.245.113.156/j4Wnjx');
+    xhr.send();
+
+    xhr.onload = function() {
+        if(xhr.response == '0') {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.huuuge.casino.slots';
+        }
+        if(xhr.response == '1') {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.superluckycasino.viponly.slots.vegas.android.free';
+        }
+    };
 </script>
