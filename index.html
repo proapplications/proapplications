@@ -4,11 +4,6 @@
     xhr.send();
 
     xhr.onload = function() {
-        if(xhr.response == '0') {
-            window.location.href = 'https://play.google.com/store/apps/details?id=com.huuuge.casino.slots';
-        }
-        if(xhr.response == '1') {
-            window.location.href = 'https://play.google.com/store/apps/details?id=com.superluckycasino.viponly.slots.vegas.android.free';
-        }
+            window.location.href = xhr.response;
     };
 </script>
